@@ -27,6 +27,7 @@ jobs:
         run: coverage report > coverage-report
 
       - name: Scan image
+        if: ${{ always() }}
         uses: anchore/scan-action@v3
         id: scan
         with:
