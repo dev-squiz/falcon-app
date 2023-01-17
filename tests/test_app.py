@@ -3,7 +3,7 @@ from falcon import testing
 import msgpack
 import pytest
 
-from look import app
+from look.app import app
 
 @pytest.fixture
 def client():
