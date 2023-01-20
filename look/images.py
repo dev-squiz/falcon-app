@@ -15,5 +15,7 @@ class Resource:
         }
 
         resp.data = msgpack.packb(doc, use_bin_type=True)
+
         resp.content_type = falcon.MEDIA_MSGPACK
+        
         resp.status = falcon.HTTP_200
